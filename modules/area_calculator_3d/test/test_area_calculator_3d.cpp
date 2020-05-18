@@ -19,5 +19,5 @@ TEST(Epremyan_Norik_AreaCalculator3D, CanGetFigureType){
   // Act
 
   // Assert
-  ASSERT_NO_THROW(tmp.figure);
+  ASSERT_NO_THROW(tmp.GetFigureType());
 }
