@@ -4,26 +4,16 @@
 
 #include "include/area_calculator_3d.h"
 
-TEST(Epremyan_Norik_AreaCalculator3D, difference) {
+TEST(Epremyan_Norik_AreaCalculator3D, CanCreateAObject) {
     // Arrange
-    double re1 = 3.55;
-    double im1 = 0.074;
-    double re2 = 16.148;
-    double im2 = 7.6336;
-
-    ComplexNumber a(re1, im1);
-    ComplexNumber b(re2, im2);
-    ComplexNumber c;
 
     // Act
-    c = a - b;
 
     // Assert
-    EXPECT_EQ(re1-re2, c.getRe());
-    EXPECT_EQ(im1-im2, c.getIm());
+    ASSERT_NO_THROW(area_calculator_3d tmp());
 }
 
-TEST(Epremyan_Norik_AreaCalculator3D, sum) {
+/*TEST(Epremyan_Norik_AreaCalculator3D, sum) {
     // Arrange
     double re1 = 3.55;
     double im1 = 0.074;
@@ -85,4 +75,4 @@ TEST(Epremyan_Norik_AreaCalculator3D, SetImagine) {
 
     // Assert
     EXPECT_EQ(im2, a.getIm());
-}
+}*/

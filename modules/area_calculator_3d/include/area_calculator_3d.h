@@ -5,8 +5,8 @@
 
 class area_calculator_3d {
  public:
-    area_calculator_3d();
-    std::string operator()(int argc, const char** argv);
+    //area_calculator_3d();
+    //std::string operator()(int argc, const char** argv);
 
  private:
 
