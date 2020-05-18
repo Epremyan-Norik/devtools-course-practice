@@ -10,5 +10,7 @@
 
 area_calculator_3d::area_calculator_3d() {
   figure="none";
-
+}
+string area_calculator_3d::GetFigureType(){
+  return figure;
 }

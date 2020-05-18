@@ -7,7 +7,7 @@
 class area_calculator_3d {
  public:
     area_calculator_3d();
-    //std::string operator()(int argc, const char** argv);
+    string GetFigureType();
 
  private:
    string figure;
