@@ -10,7 +10,7 @@ class area_calculator_3d {
     string GetFigureType();
 
  private:
-   string figure;
+   std::string figure;
 
 
 };
