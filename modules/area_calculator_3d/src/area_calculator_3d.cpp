@@ -8,6 +8,7 @@
 #include <string>
 #include <sstream>
 
-/*bool area_calculator_3d::validateNumberOfArguments(int argc, const char** argv) {
+area_calculator_3d::area_calculator_3d() {
+  figure="none";
 
-}*/
+}

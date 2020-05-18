@@ -12,3 +12,12 @@ TEST(Epremyan_Norik_AreaCalculator3D, CanCreateAObject) {
     // Assert
     ASSERT_NO_THROW(area_calculator_3d tmp);
 }
+TEST(Epremyan_Norik_AreaCalculator3D, CanGetFigureType){
+  // Arrange
+  area_calculator_3d tmp;
+
+  // Act
+
+  // Assert
+  ASSERT_NO_THROW(tmp.figure);
+}
