@@ -1,6 +1,8 @@
 // Copyright 2020 Epremyan Norik
 
 
+#ifndef MODULES_AREA_CALCULATOR_3D_INCLUDE_AREA_CALCULATOR_3D_H_
+#define MODULES_AREA_CALCULATOR_3D_INCLUDE_AREA_CALCULATOR_3D_H_
 #include <string>
 
 class area_calculator_3d {
@@ -11,3 +13,4 @@ class area_calculator_3d {
  private:
 
 };
+#endif  // MODULES_AREA_CALCULATOR_3D_INCLUDE_AREA_CALCULATOR_3D_H_
