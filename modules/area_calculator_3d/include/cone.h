@@ -3,7 +3,7 @@
 #define MODULES_AREA_CALCULATOR_3D_INCLUDE_CONE_H_
 #include <string>
 class cone {
-public:
+ public:
     cone();
     cone(double _height, double _radius);
     std::string GetFigureType();
@@ -11,9 +11,9 @@ public:
     double GetHeight();
     bool SetRadius(double _radius);
     bool SetHeight(double _height);
-private:
+ private:
     std::string figuretype;
     double Radius;
     double Height;
 };
-#endif  // MODULES_AREA_CALCULATOR_3D_INCLUDE_AREA_CALCULATOR_3D_H_
+#endif  // MODULES_AREA_CALCULATOR_3D_INCLUDE_CONE_H_
