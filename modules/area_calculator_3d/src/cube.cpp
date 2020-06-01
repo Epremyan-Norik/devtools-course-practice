@@ -1,5 +1,5 @@
 // Copyright 2020 Epremyan Norik
-#include "cube.h"
+#include "include/cube.h"
 #include <string>
 #include <exception>
 

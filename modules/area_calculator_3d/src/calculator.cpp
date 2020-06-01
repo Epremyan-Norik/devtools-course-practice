@@ -1,5 +1,5 @@
 // Copyright 2020 Epremyan Norik
-#include "calculator.h"
+#include "include/calculator.h"
 #include <string>
 #define _USE_MATH_DEFINES
 #include <math.h>

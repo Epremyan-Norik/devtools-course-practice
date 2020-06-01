@@ -1,5 +1,5 @@
 // Copyright 2020 Epremyan Norik
-#include "cone.h"
+#include "include/cone.h"
 #include <string>
 #include <exception>
 
