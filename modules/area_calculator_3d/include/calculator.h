@@ -3,14 +3,19 @@
 #ifndef MODULES_AREA_CALCULATOR_3D_INCLUDE_AREA_CALCULATOR_3D_H_
 #define MODULES_AREA_CALCULATOR_3D_INCLUDE_AREA_CALCULATOR_3D_H_
 #include <string>
-
-class area_calculator_3d {
+#include "cone.h"
+#include "cylinder.h"
+#include "cube.h"
+template <class T>
+class calculator {
  public:
-    area_calculator_3d();
-    std::string GetFigureType();
-
+	 calculator();
+	 calculator(T* _figure);
+	 ~calculator();
+	 double result();
+	 
  private:
-   std::string figure;
+	 T* figure;
 
 
 };
