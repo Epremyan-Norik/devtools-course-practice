@@ -11,4 +11,4 @@ class calculator {
  private:
     T* figure;
 };
-#endif  // MODULES_AREA_CALCULATOR_3D_INCLUDE_CALCULATOR_3D_H_
+#endif  // MODULES_AREA_CALCULATOR_3D_INCLUDE_CALCULATOR_H_

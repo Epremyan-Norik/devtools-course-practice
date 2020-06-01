@@ -5,7 +5,7 @@
 class cube {
  public:
     cube();
-    cube(double _edge);
+    explicit cube(double _edge);
     std::string GetFigureType();
     double GetEdge();
     bool setEdge(double);
@@ -13,4 +13,4 @@ class cube {
     std::string figuretype;
     double edge;
 };
-#endif 
+#endif // MODULES_AREA_CALCULATOR_3D_INCLUDE_CUBE_H_
