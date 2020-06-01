@@ -18,12 +18,12 @@ std::string cone::GetFigureType() {
     return this->Radius;
  }
  bool cone::SetHeight(double _height) {
-    if (_height <= 0) throw std::exception::exception("Height should be positive");
+    if (_height <= 0) throw ("Height should be positive");
     this->Height = _height;
     return true;
  }
  bool cone::SetRadius(double _radius) {
-    if (_radius <= 0) throw std::exception("Radius should be positive");
+    if (_radius <= 0) throw ("Radius should be positive");
     this->Height = _radius;
     return true;
  }
