@@ -8,7 +8,7 @@ class cube {
     explicit cube(double _edge);
     std::string GetFigureType();
     double GetEdge();
-    bool setEdge(double);
+    bool setEdge(double _edge);
  private:
     std::string figuretype;
     double edge;
