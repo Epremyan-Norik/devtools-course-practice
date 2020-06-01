@@ -1,12 +1,9 @@
 // Copyright 2020 Epremyan Norik
 #include "include/cube.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <string.h>
+
 #include <string>
-#include <sstream>
+#include <exception>
 
 cube::cube() {
 	figuretype = "cube";

@@ -1,6 +1,7 @@
 // Copyright 2020 Epremyan Norik
 #include "include/cylinder.h"
 #include <string>
+#include <exception>
 
 Cylinder::Cylinder() {
 	this->figuretype = "cylinder";

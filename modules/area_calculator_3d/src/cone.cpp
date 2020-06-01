@@ -1,6 +1,7 @@
 // Copyright 2020 Epremyan Norik
 #include "include/cone.h"
 #include <string>
+#include <exception>
 
 cone::cone() {
 	figuretype = "cone";
