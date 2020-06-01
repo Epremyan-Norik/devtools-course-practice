@@ -18,4 +18,4 @@ class Cylinder {
     double Height;
     std::string figuretype;
 };
-#endif  //MODULES_AREA_CALCULATOR_3D_INCLUDE_CYLINDER_H_
+#endif  // MODULES_AREA_CALCULATOR_3D_INCLUDE_CYLINDER_H_

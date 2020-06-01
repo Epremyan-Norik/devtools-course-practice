@@ -13,4 +13,4 @@ class cube {
     std::string figuretype;
     double edge;
 };
-#endif  //MODULES_AREA_CALCULATOR_3D_INCLUDE_CUBE_H_
+#endif  // MODULES_AREA_CALCULATOR_3D_INCLUDE_CUBE_H_
