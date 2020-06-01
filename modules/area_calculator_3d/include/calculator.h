@@ -9,14 +9,11 @@
 template <class T>
 class calculator {
  public:
-	 calculator();
-	 calculator(T* _figure);
-	 ~calculator();
-	 double result();
-	 
+    calculator();
+    calculator(T* _figure);
+    ~calculator();
+    double result();
  private:
-	 T* figure;
-
-
+    T* figure;
 };
 #endif  // MODULES_AREA_CALCULATOR_3D_INCLUDE_AREA_CALCULATOR_3D_H_

@@ -7,15 +7,12 @@
 class cube {
  public:
     cube();
-	cube(double _edge);
+    cube(double _edge);
     std::string GetFigureType();
-	double GetEdge();
-	bool setEdge(double);
-
+    double GetEdge();
+    bool setEdge(double);
  private:
-	 std::string figuretype;
-	 double edge;
-
-
+    std::string figuretype;
+    double edge;
 };
 #endif 

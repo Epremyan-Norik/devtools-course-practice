@@ -6,17 +6,16 @@
 
 class Cylinder {
  public:
-	 Cylinder();
-	 Cylinder(double _height, double _radius);
-	 std::string GetFigureType();
-	 double GetRadius();
-	 double GetHeight();
-	 bool SetRadius(double _radius);
-	 bool SetHeight(double _height);
-
+    Cylinder();
+    Cylinder(double _height, double _radius);
+    std::string GetFigureType();
+    double GetRadius();
+    double GetHeight();
+    bool SetRadius(double _radius);
+    bool SetHeight(double _height);
  private:
-	 double Radius;
-	 double Height;
-	 std::string figuretype;
+    double Radius;
+    double Height;
+    std::string figuretype;
 };
 #endif  // MODULES_AREA_CALCULATOR_3D_INCLUDE_AREA_CALCULATOR_3D_H_
