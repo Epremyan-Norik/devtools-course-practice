@@ -1,9 +1,7 @@
 // Copyright 2020 Epremyan Norik
-
 #ifndef MODULES_AREA_CALCULATOR_3D_INCLUDE_CUBE__H_
 #define MODULES_AREA_CALCULATOR_3D_INCLUDE_CUBE__H_
 #include <string>
-
 class cube {
  public:
     cube();
