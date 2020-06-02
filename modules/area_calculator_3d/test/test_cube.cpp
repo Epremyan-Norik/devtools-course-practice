@@ -17,7 +17,7 @@ TEST(Epremyan_Norik_Cube, CanGetFigureType) {
     // Act
     type = temp.GetFigureType();
     // Assert
-    EXPECT_EQ(type ,"cube");
+    EXPECT_EQ(type, "cube");
 }
 TEST(Epremyan_Norik_Cube, CanGetEdge) {
     // Arrange
