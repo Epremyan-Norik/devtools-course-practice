@@ -1,6 +1,7 @@
 // Copyright 2020 Epremyan Norik
-#include "include/cone.h"
 #include <gtest/gtest.h>
+#include <string>
+#include "include/cone.h"
 // -----------------------------TESTS FOR CONE
 
 TEST(Epremyan_Norik_Cone, CanCreateObject) {
@@ -17,7 +18,7 @@ TEST(Epremyan_Norik_Cone, CanCreateObjectWithArguments) {
     _height = 5;
     _radius = 5;
     // Assert
-    ASSERT_NO_THROW(cone temp(_height,_radius));
+    ASSERT_NO_THROW(cone temp(_height, _radius));
 }
 TEST(Epremyan_Norik_Cone, CanGetFigureType) {
     // Arrange
@@ -35,7 +36,7 @@ TEST(Epremyan_Norik_Cone, CanGetRadius) {
     // Act
     radius = temp.GetRadius();
     // Assert
-    EXPECT_DOUBLE_EQ(radius,1);
+    EXPECT_DOUBLE_EQ(radius, 1);
 }
 TEST(Epremyan_Norik_Cone, CanGetHeight) {
     // Arrange
