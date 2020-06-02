@@ -1,6 +1,6 @@
 // Copyright 2020 Epremyan Norik
-#include <string>
 #include <gtest/gtest.h>
+#include <string>
 #include "include/calculator.h"
 class testcube {
  public:
