@@ -25,8 +25,10 @@ double Cylinder::GetHeight() {
 bool Cylinder::SetRadius(double _radius) {
     if (_radius <= 0) throw ("Radius should be positive");
     this->Radius = _radius;
+	return false;
 }
 bool Cylinder::SetHeight(double _height) {
     if (_height <= 0) throw ("Height should be positive");
     this->Radius = _height;
+	return false;
 }

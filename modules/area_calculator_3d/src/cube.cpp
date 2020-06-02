@@ -19,9 +19,7 @@ double cube::GetEdge() {
     return this->edge;
 }
 bool cube::setEdge(double _edge) {
-    bool result = true;
     if (_edge < 0) throw ("Cant Set negative Value");
     this->edge = _edge;
-    result = 0;
-    return result;
+	return false;
 }
