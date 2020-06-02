@@ -1,5 +1,4 @@
 // Copyright 2020 Epremyan Norik
-#pragma once
 #include "include/cube.h"
 #include <gtest/gtest.h>
 
