@@ -1,0 +1,34 @@
+// Copyright 2020 Epremyan Norik
+#include "include/cone.h"
+#include <string>
+#include <exception>
+
+cone::cone() {
+    figuretype = "cone";
+    Radius = 1;
+    Height = 1;
+}
+std::string cone::GetFigureType() {
+    return this->figuretype;
+}
+double cone::GetHeight() {
+    return this->Height;
+}
+double cone::GetRadius() {
+    return this->Radius;
+}
+bool cone::SetHeight(double _height) {
+    if (_height <= 0) throw ("Height should be positive");
+    this->Height = _height;
+    return false;
+}
+bool cone::SetRadius(double _radius) {
+    if (_radius <= 0) throw ("Radius should be positive");
+    this->Height = _radius;
+    return false;
+}
+cone::cone(double _height, double _radius) {
+    this->figuretype = "cone";
+    this->SetHeight(_height);
+    this->SetRadius(_radius);
+}
