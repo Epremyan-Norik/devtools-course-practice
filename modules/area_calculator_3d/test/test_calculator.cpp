@@ -1,10 +1,9 @@
 // Copyright 2020 Epremyan Norik
-#include "calculator.h"
-#include <string.h>
+#include <string>
 #include <gtest/gtest.h>
-class testcube
-{
-public:
+#include "calculator.h"
+class testcube {
+ public:
     std::string GetFigureType() {
         return "cube";
     }
