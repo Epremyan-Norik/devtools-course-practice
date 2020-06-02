@@ -27,15 +27,15 @@ double calculator<T>::result() {
         break;
     }
     case "cone": {
-		double rad = figure.GetRadius();
-		double Hei = figure.GetHeight();
+        double rad = figure.GetRadius();
+        double Hei = figure.GetHeight();
         double forming = sqrt(exp2(rad) + exp2(Hei));
         _res = M_PI * rad * (rad+forming);
         break;
     }
     case "cylinder": {
-		double rad = figure.GetRadius();
-		double Hei = figure.GetHeight();
+        double rad = figure.GetRadius();
+        double Hei = figure.GetHeight();
         _res = 2 * M_PI * rad * (rad + Hei);
         break;
     }
