@@ -20,19 +20,23 @@ calculator<T>::~calculator() {
 }
 template <class T>
 double calculator<T>::result() {
-    double _res=0;
-    switch (figure.GetFigureType()){
+    double _res = 0;
+    switch (figure.GetFigureType()) {
     case "cube": {
         _res = 6 * figure.GetEdge()*figure.GetEdge();
         break;
     }
     case "cone": {
-        double forming = sqrt(exp2(figure.GetRadius()) + exp2(figure.GetHeight()));
-        _res = M_PI * figure.GetRadius() * (figure.GetRadius()+forming);
+		double rad = figure.GetRadius();
+		double Hei = figure.GetHeight();
+        double forming = sqrt(exp2(rad) + exp2(Hei));
+        _res = M_PI * rad * (rad+forming);
         break;
     }
     case "cylinder": {
-        _res = 2 * M_PI * figure.GetRadius() * (figure.GetRadius() + figure.GetHeight());
+		double rad = figure.GetRadius();
+		double Hei = figure.GetHeight();
+        _res = 2 * M_PI * rad * (rad + Hei);
         break;
     }
     default:
