@@ -54,7 +54,7 @@ TEST(Epremyan_Norik_Cone, CanSetHeight) {
     // Act
     _height = 5;
     // Assert
-    EXPECT_TRUE(temp.SetHeight(_height));
+    EXPECT_FALSE(temp.SetHeight(_height));
 }
 TEST(Epremyan_Norik_Cone, CanSetRadius) {
     // Arrange
@@ -63,7 +63,7 @@ TEST(Epremyan_Norik_Cone, CanSetRadius) {
     // Act
     _radius = 5;
     // Assert
-    EXPECT_TRUE(temp.SetRadius(_radius));
+    EXPECT_FALSE(temp.SetRadius(_radius));
 }
 TEST(Epremyan_Norik_Cone, CantSetRadiusNegative) {
     // Arrange
