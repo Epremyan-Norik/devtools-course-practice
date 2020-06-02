@@ -9,7 +9,7 @@ cube::cube() {
 }
 cube::cube(double _edge) {
     figuretype = "cube";
-    if (_edge < 0) throw std::exception("Cant Create with negative Value");
+    if (_edge < 0) throw ("Cant Create with negative Value");
     edge = _edge;
 }
 std::string cube::GetFigureType() {
@@ -20,7 +20,7 @@ double cube::GetEdge() {
 }
 bool cube::setEdge(double _edge) {
     bool result = true;
-    if (_edge < 0) throw std::exception("Cant Set negative Value");
+    if (_edge < 0) throw ("Cant Set negative Value");
     this->edge = _edge;
     result = 0;
     return result;

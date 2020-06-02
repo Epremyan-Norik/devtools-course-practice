@@ -23,10 +23,10 @@ double Cylinder::GetHeight() {
     return this->Height;
 }
 bool Cylinder::SetRadius(double _radius) {
-    if (_radius <= 0) throw std::exception("Radius should be positive");
+    if (_radius <= 0) throw ("Radius should be positive");
     this->Radius = _radius;
 }
 bool Cylinder::SetHeight(double _height) {
-    if (_height <= 0) throw std::exception("Height should be positive");
+    if (_height <= 0) throw ("Height should be positive");
     this->Radius = _height;
 }
