@@ -2,7 +2,7 @@
 #include <gtest/gtest.h>
 #include <string>
 #include "include/cylinder.h"
-//-----------------------------TESTS FOR Cylinder
+// -----------------------------TESTS FOR Cylinder
 TEST(Epremyan_Norik_Cylinder, CanCreateObject) {
     // Arrange
     // Act
