@@ -7,6 +7,13 @@
 #include "include/calculator.h"
 
 // -----------------------------TESTS FOR CUBE
+TEST(Epremyan_Norik_Cube, CanCreateFactoryObject) {
+// Arrange
+// Act
+// Assert
+    ASSERT_NO_THROW(CubeFactory tmp);
+}
+
 TEST(Epremyan_Norik_Cube, CanCreateObject) {
 // Arrange
     CubeFactory* tmpCube = new CubeFactory;
@@ -78,6 +85,13 @@ TEST(Epremyan_Norik_Cube, CanCalculateArea) {
 
 
 // -----------------------------TESTS FOR CYLINDER
+TEST(Epremyan_Norik_Cylinder, CanCreateFactoryObject) {
+// Arrange
+// Act
+// Assert
+    ASSERT_NO_THROW(CylinderFactory tmp);
+}
+
 TEST(Epremyan_Norik_Cylinder, CanCreateObject) {
 // Arrange
     CylinderFactory* templ = new CylinderFactory;
@@ -153,6 +167,13 @@ TEST(Epremyan_Norik_Cylinder, CanCalculateArea) {
 
 
 // -----------------------------TESTS FOR CONE
+TEST(Epremyan_Norik_Cone, CanCreateFactoryObject) {
+// Arrange
+// Act
+// Assert
+    ASSERT_NO_THROW(ConeFactory tmp);
+}
+
 TEST(Epremyan_Norik_Cone, CanCreateObject) {
 // Arrange
     ConeFactory* templ = new ConeFactory;
