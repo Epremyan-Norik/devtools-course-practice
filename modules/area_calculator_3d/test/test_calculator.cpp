@@ -14,6 +14,14 @@ TEST(Epremyan_Norik_Cube, CanCreateFactoryObject) {
     ASSERT_NO_THROW(CubeFactory tmp);
 }
 
+TEST(Epremyan_Norik_Cube, CanDeleteFactoryObject) {
+// Arrange
+    CubeFactory* tmpCube = new CubeFactory;
+// Act
+// Assert
+    ASSERT_NO_THROW(delete tmpCube);
+}
+
 TEST(Epremyan_Norik_Cube, CanCreateObject) {
 // Arrange
     CubeFactory* tmpCube = new CubeFactory;
@@ -90,6 +98,14 @@ TEST(Epremyan_Norik_Cylinder, CanCreateFactoryObject) {
 // Act
 // Assert
     ASSERT_NO_THROW(CylinderFactory tmp);
+}
+
+TEST(Epremyan_Norik_Cylinder, CanDeleteFactoryObject) {
+// Arrange
+    CylinderFactory* templ = new CylinderFactory;
+// Act
+// Assert
+    ASSERT_NO_THROW(delete templ);
 }
 
 TEST(Epremyan_Norik_Cylinder, CanCreateObject) {
@@ -172,6 +188,14 @@ TEST(Epremyan_Norik_Cone, CanCreateFactoryObject) {
 // Act
 // Assert
     ASSERT_NO_THROW(ConeFactory tmp);
+}
+
+TEST(Epremyan_Norik_Cone, CanDeleteFactoryObject) {
+// Arrange
+    ConeFactory* templ = new ConeFactory;
+// Act
+// Assert
+    ASSERT_NO_THROW(delete templ);
 }
 
 TEST(Epremyan_Norik_Cone, CanCreateObject) {
