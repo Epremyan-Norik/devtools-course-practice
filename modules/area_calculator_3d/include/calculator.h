@@ -10,11 +10,10 @@ class figure {
     std::string name;
  public:
     virtual double area() = 0;
-	virtual std::string GetName() = 0;
-	virtual bool SetValue(std::vector<double> _vals) = 0;
-	virtual std::vector<double>* GetValue() = 0;
+    virtual std::string GetName() = 0;
+    virtual bool SetValue(std::vector<double> _vals) = 0;
+    virtual std::vector<double>* GetValue() = 0;
 };
-
 
 class cone : public figure {
 public:
@@ -23,36 +22,35 @@ public:
     std::string GetName();
     bool SetValue(std::vector<double> _vals);
     std::vector<double>* GetValue();
-	double area();
+    double area();
 private:
-	
-	double Radius;
-	double Height;
+    double Radius;
+    double Height;
 };
 
 class cube : public figure {
 public:
-	cube();
-	explicit cube(double _edge);
-	std::string GetName();
-	bool SetValue(std::vector<double> _vals);
-	std::vector<double>* GetValue();
+    cube();
+    explicit cube(double _edge);
+    std::string GetName();
+    bool SetValue(std::vector<double> _vals);
+    std::vector<double>* GetValue();
     double area();
 private:
-	double edge;
+    double edge;
 };
 
 class cylinder : public figure {
 public:
-	cylinder();
-	cylinder(double _height, double _radius);
-	std::string GetName();
-	bool SetValue(std::vector<double> _vals);
-	std::vector<double>* GetValue();
-	double area();
+    cylinder();
+    cylinder(double _height, double _radius);
+    std::string GetName();
+    bool SetValue(std::vector<double> _vals);
+    std::vector<double>* GetValue();
+    double area();
 private:
-	double Radius;
-	double Height;
+    double Radius;
+    double Height;
 };
 
 // Factories

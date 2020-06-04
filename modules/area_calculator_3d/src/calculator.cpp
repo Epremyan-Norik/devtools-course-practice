@@ -7,66 +7,66 @@
 
 // cone
 cone::cone() {
-	name = "cone";
-	Radius = 1;
-	Height = 1;
+    name = "cone";
+    Radius = 1;
+    Height = 1;
 }
 std::string cone::GetName() {
-	return this->name;
+    return this->name;
 }
 bool cone::SetValue(std::vector<double> _vals) {
-	if (_vals.size() < 2) throw "Empty vector";
-	double _radius = _vals[0];
-	double _height = _vals[1];
-	if (_radius <= 0) throw "Radius should be positive";
-	if (_height <= 0) throw "Height should be positive";
-	this->Height = _height;
-	this->Radius = _radius;
-	return true;
+    if (_vals.size() < 2) throw "Empty vector";
+    double _radius = _vals[0];
+    double _height = _vals[1];
+    if (_radius <= 0) throw "Radius should be positive";
+    if (_height <= 0) throw "Height should be positive";
+    this->Height = _height;
+    this->Radius = _radius;
+    return true;
 }
 std::vector<double>* cone::GetValue() {
-	std::vector<double> *vals=new std::vector<double>;
-	vals->push_back(Radius);
-	vals->push_back(Height);
-	return vals;
+    std::vector<double> *vals=new std::vector<double>;
+    vals->push_back(Radius);
+    vals->push_back(Height);
+    return vals;
 }
 cone::cone(double _height, double _radius) {
-	this->name = "cone";
-	this->Height =_height;
-	this->Radius = _radius;
+    this->name = "cone";
+    this->Height =_height;
+    this->Radius = _radius;
 }
 double cone::area() {
     double rad = this->Radius;
     double Hei = this->Height;
     double forming = sqrt(exp2(rad) + exp2(Hei));
-	double _area = M_PI * rad * (rad + forming);
-	return _area;
+    double _area = M_PI * rad * (rad + forming);
+    return _area;
 }
 
 // cube
 cube::cube() {
-	name = "cube";
-	edge = 1;
+    name = "cube";
+    edge = 1;
 }
 cube::cube(double _edge) {
-	name = "cube";
-	if (_edge < 0) throw ("Cant Create with negative Value");
-	edge = _edge;
+    name = "cube";
+    if (_edge < 0) throw ("Cant Create with negative Value");
+    edge = _edge;
 }
 std::string cube::GetName() {
-	return this->name;
+    return this->name;
 }
 bool cube::SetValue(std::vector<double> _vals) {
-	if (_vals.size() == 0) throw "Empty vector";
-	double _edge = _vals[0];
-	if (_edge <= 0) throw "Edge should be positive";
-	this->edge = _edge;
-	return true;
+    if (_vals.size() == 0) throw "Empty vector";
+    double _edge = _vals[0];
+    if (_edge <= 0) throw "Edge should be positive";
+    this->edge = _edge;
+    return true;
 }
 std::vector<double>* cube::GetValue() {
-	std::vector<double> *vals=new std::vector<double>;
-	vals->push_back(edge);
-	return vals;
+    std::vector<double> *vals = new std::vector<double>;
+    vals->push_back(edge);
+    return vals;
 }
 double cube::area() {
     double _area = 6 * edge * edge;
@@ -76,39 +76,39 @@ double cube::area() {
 // Cylinder
 
 cylinder::cylinder() {
-	this->name = "cylinder";
-	this->Height = 1;
-	this->Radius = 1;
+    this->name = "cylinder";
+    this->Height = 1;
+    this->Radius = 1;
 }
 cylinder::cylinder(double _height, double _radius) {
-	this->name = "cylinder";
-	this->Height=_height;
-	this->Radius = _radius;
+    this->name = "cylinder";
+    this->Height=_height;
+    this->Radius = _radius;
 }
 std::string cylinder::GetName() {
-	return this->name;
+    return this->name;
 }
 bool cylinder::SetValue(std::vector<double> _vals) {
-	if (_vals.size() < 2) throw "Empty vector";
-	double _radius = _vals[0];
-	double _height = _vals[1];
-	if (_radius <= 0) throw "Radius should be positive";
-	if (_height <= 0) throw "Height should be positive";
-	this->Height = _height;
-	this->Radius = _radius;
-	return true;
+    if (_vals.size() < 2) throw "Empty vector";
+    double _radius = _vals[0];
+    double _height = _vals[1];
+    if (_radius <= 0) throw "Radius should be positive";
+    if (_height <= 0) throw "Height should be positive";
+    this->Height = _height;
+    this->Radius = _radius;
+    return true;
 }
 std::vector<double>* cylinder::GetValue() {
-	std::vector<double> *vals = new std::vector<double>;
-	vals->push_back(Radius);
-	vals->push_back(Height);
-	return vals;
+    std::vector<double> *vals = new std::vector<double>;
+    vals->push_back(Radius);
+    vals->push_back(Height);
+    return vals;
 }
 
 double cylinder::area() {
     double rad = this->Radius;
     double Hei = this->Height;
-	double _area = 2 * M_PI * rad * (rad + Hei);
+    double _area = 2 * M_PI * rad * (rad + Hei);
     return _area;
 }
 
