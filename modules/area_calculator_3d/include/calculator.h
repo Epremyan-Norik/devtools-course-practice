@@ -18,7 +18,6 @@ class figure {
 class cone : public figure {
  public:
     cone();
-    cone(double _height, double _radius);
     std::string GetName();
     bool SetValue(std::vector<double> _vals);
     std::vector<double>* GetValue();
@@ -31,7 +30,6 @@ class cone : public figure {
 class cube : public figure {
  public:
     cube();
-    explicit cube(double _edge);
     std::string GetName();
     bool SetValue(std::vector<double> _vals);
     std::vector<double>* GetValue();
@@ -43,7 +41,6 @@ class cube : public figure {
 class cylinder : public figure {
  public:
     cylinder();
-    cylinder(double _height, double _radius);
     std::string GetName();
     bool SetValue(std::vector<double> _vals);
     std::vector<double>* GetValue();
