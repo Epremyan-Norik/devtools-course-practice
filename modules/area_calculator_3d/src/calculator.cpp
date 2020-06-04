@@ -30,11 +30,6 @@ std::vector<double>* cone::GetValue() {
     vals->push_back(Height);
     return vals;
 }
-cone::cone(double _height, double _radius) {
-    this->name = "cone";
-    this->Height = _height;
-    this->Radius = _radius;
-}
 double cone::area() {
     double rad = this->Radius;
     double Hei = this->Height;
@@ -47,11 +42,6 @@ double cone::area() {
 cube::cube() {
     name = "cube";
     edge = 1;
-}
-cube::cube(double _edge) {
-    name = "cube";
-    if (_edge < 0) throw ("Cant Create with negative Value");
-    edge = _edge;
 }
 std::string cube::GetName() {
     return this->name;
@@ -79,11 +69,6 @@ cylinder::cylinder() {
     this->name = "cylinder";
     this->Height = 1;
     this->Radius = 1;
-}
-cylinder::cylinder(double _height, double _radius) {
-    this->name = "cylinder";
-    this->Height = _height;
-    this->Radius = _radius;
 }
 std::string cylinder::GetName() {
     return this->name;
