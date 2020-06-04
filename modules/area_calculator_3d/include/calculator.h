@@ -62,12 +62,12 @@ class figureFactory {
 
 class ConeFactory : public figureFactory {
  public:
-	 figure* createFigure();
+    figure* createFigure();
 };
 
 class CubeFactory : public figureFactory {
  public:
-	 figure* createFigure();
+    figure* createFigure();
 };
 
 class CylinderFactory : public figureFactory {
