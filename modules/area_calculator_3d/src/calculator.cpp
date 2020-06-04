@@ -25,14 +25,14 @@ bool cone::SetValue(std::vector<double> _vals) {
     return true;
 }
 std::vector<double>* cone::GetValue() {
-    std::vector<double> *vals=new std::vector<double>;
+    std::vector<double> *vals = new std::vector<double>;
     vals->push_back(Radius);
     vals->push_back(Height);
     return vals;
 }
 cone::cone(double _height, double _radius) {
     this->name = "cone";
-    this->Height =_height;
+    this->Height = _height;
     this->Radius = _radius;
 }
 double cone::area() {
@@ -82,7 +82,7 @@ cylinder::cylinder() {
 }
 cylinder::cylinder(double _height, double _radius) {
     this->name = "cylinder";
-    this->Height=_height;
+    this->Height = _height;
     this->Radius = _radius;
 }
 std::string cylinder::GetName() {

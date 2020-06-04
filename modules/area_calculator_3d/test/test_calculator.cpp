@@ -3,6 +3,7 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <string>
+#include <vector>
 #include "include/calculator.h"
 
 // -----------------------------TESTS FOR CUBE
@@ -19,7 +20,7 @@ TEST(Epremyan_Norik_Cube, CanGetName) {
     CubeFactory* tmpCube = new CubeFactory;
     figure* _Cube;
 // Act
-    _Cube=tmpCube->createFigure();
+    _Cube = tmpCube->createFigure();
 // Assert
     EXPECT_EQ(_Cube->GetName(), "cube");
 }
@@ -146,7 +147,7 @@ TEST(Epremyan_Norik_Cylinder, CanCalculateArea) {
     vals.push_back(2);
     _Cylndr->SetValue(vals);
 // Assert
-    EXPECT_DOUBLE_EQ(_Cylndr->area(),2*M_PI*2*4);
+    EXPECT_DOUBLE_EQ(_Cylndr->area(), 2*M_PI*2*4);
 }
 
 
@@ -167,7 +168,7 @@ TEST(Epremyan_Norik_Cone, CanGetName) {
 // Act
     _Cone = templ->createFigure();
 // Assert
-    EXPECT_EQ(_Cone->GetName(),"cone");
+    EXPECT_EQ(_Cone->GetName(), "cone");
 }
 
 TEST(Epremyan_Norik_Cone, CanGetValue) {
