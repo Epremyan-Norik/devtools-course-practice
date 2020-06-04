@@ -16,39 +16,39 @@ class figure {
 };
 
 class cone : public figure {
-public:
+ public:
     cone();
     cone(double _height, double _radius);
     std::string GetName();
     bool SetValue(std::vector<double> _vals);
     std::vector<double>* GetValue();
     double area();
-private:
+ private:
     double Radius;
     double Height;
 };
 
 class cube : public figure {
-public:
+ public:
     cube();
     explicit cube(double _edge);
     std::string GetName();
     bool SetValue(std::vector<double> _vals);
     std::vector<double>* GetValue();
     double area();
-private:
+ private:
     double edge;
 };
 
 class cylinder : public figure {
-public:
+ public:
     cylinder();
     cylinder(double _height, double _radius);
     std::string GetName();
     bool SetValue(std::vector<double> _vals);
     std::vector<double>* GetValue();
     double area();
-private:
+ private:
     double Radius;
     double Height;
 };
