@@ -56,7 +56,7 @@ TEST(Epremyan_Norik_Application, CantCreateFigureCylinder) {
 // Act
 // Assert
     EXPECT_FALSE(test.CanCreateFigure(3, data4));
-} 
+}
 
 TEST(Epremyan_Norik_Application, CantCreateFigureCone) {
 // Arrange
@@ -90,7 +90,7 @@ TEST(Epremyan_Norik_Application, CantCreatePointerUnknownFigure) {
     std::vector<std::string> data4 = {"sphere", "2", "2" };
 // Act
 // Assert
-    EXPECT_EQ(test.CreateFigure(data4), nullptr) ;
+    EXPECT_EQ(test.CreateFigure(data4), nullptr);
 }
 TEST(Epremyan_Norik_Application, CreateFigurePointerCube) {
 // Arrange
@@ -136,5 +136,5 @@ TEST(Epremyan_Norik_Application, CanCalculateArea) {
     const char** data3 = arr3;
 // Act
 // Assert
-    EXPECT_EQ(test(3, data3),"Area of Figure cube 24");
+    EXPECT_EQ(test(3, data3), "Area of Figure cube 24");
 }
