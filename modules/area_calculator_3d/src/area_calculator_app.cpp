@@ -31,7 +31,8 @@ bool area_calculator_app::CanCreateFigure(int argc, std::vector<std::string> arg
     } else if (argv[0] == "cone") {
         if (argc < 4) return false;  // Not enough arguments
         return true;
-    } else return false;  // lib don't know this figure
+    } else 
+        return false;  // lib don't know this figure
 }
 figure* area_calculator_app::CreateFigure(std::vector<std::string> argv) {
     figure* _figure = nullptr;
@@ -41,20 +42,20 @@ figure* area_calculator_app::CreateFigure(std::vector<std::string> argv) {
         _figure = tmpCube->createFigure();
         vec.push_back(atof(argv[1].c_str()));
         _figure->SetValue(vec);
-    }
-    else if (argv[0] == "cylinder") {
-        CylinderFactory* tmpCylinder = new CylinderFactory;
-        _figure = tmpCylinder->createFigure();
-        vec.push_back(atof(argv[1].c_str()));
-        vec.push_back(atof(argv[2].c_str()));
-        _figure->SetValue(vec);
-    }
-    else if (argv[0] == "cone") {
-        ConeFactory* tmpCone = new ConeFactory;
-        _figure = tmpCone->createFigure();
-        vec.push_back(atof(argv[1].c_str()));
-        vec.push_back(atof(argv[2].c_str()));
-        _figure->SetValue(vec);
-     }
+    } else 
+        if (argv[0] == "cylinder") {
+            CylinderFactory* tmpCylinder = new CylinderFactory;
+            _figure = tmpCylinder->createFigure();
+            vec.push_back(atof(argv[1].c_str()));
+            vec.push_back(atof(argv[2].c_str()));
+            _figure->SetValue(vec);
+    } else 
+        if (argv[0] == "cone") {
+            ConeFactory* tmpCone = new ConeFactory;
+            _figure = tmpCone->createFigure();
+            vec.push_back(atof(argv[1].c_str()));
+            vec.push_back(atof(argv[2].c_str()));
+            _figure->SetValue(vec);
+        }
     return _figure;
 }
