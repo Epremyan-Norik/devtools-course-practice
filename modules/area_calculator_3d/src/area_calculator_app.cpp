@@ -34,7 +34,7 @@ bool area_calculator_app::CanCreateFigure(int argc, std::vector<std::string> arg
     } else return false;  // lib don't know this figure
 }
 figure* area_calculator_app::CreateFigure(std::vector<std::string> argv) {
-    figure* _figure=nullptr;
+    figure* _figure = nullptr;
     std::vector<double> vec;
     if (argv[0] == "cube") {
         CubeFactory* tmpCube = new CubeFactory;
