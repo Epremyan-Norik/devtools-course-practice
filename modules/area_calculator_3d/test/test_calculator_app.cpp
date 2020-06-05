@@ -77,11 +77,11 @@ TEST(Epremyan_Norik_Application, CantCreateUnknownFigure) {
 TEST(Epremyan_Norik_Application, CantCreateInOperator) {
 // Arrange
     area_calculator_app test;
-    char* arr4[] = { "Program_name", "sphere", "2", "2" };
-    char** data4 = arr4;
+    const char* arr4[] = { "Program_name", "sphere", "2", "2" };
+    const char** data4 = arr4;
 // Act
 // Assert
-ASSERT_ANY_THROW(test(4, data4));
+    ASSERT_ANY_THROW(test(4, data4));
 }
 
 TEST(Epremyan_Norik_Application, CantCreatePointerUnknownFigure) {
@@ -122,8 +122,8 @@ TEST(Epremyan_Norik_Application, CreateFigurePointerCylinder) {
 TEST(Epremyan_Norik_Application, CantCalculateArea) {
 // Arrange
     area_calculator_app test;
-    char* arr3[] = { "Program_name", "cubec", "2"};
-    char** data3 = arr3;
+    const char* arr3[] = { "Program_name", "cubec", "2"};
+    const char** data3 = arr3;
 // Act
 // Assert
     ASSERT_ANY_THROW(test(3, data3));
@@ -132,8 +132,8 @@ TEST(Epremyan_Norik_Application, CantCalculateArea) {
 TEST(Epremyan_Norik_Application, CanCalculateArea) {
 // Arrange
     area_calculator_app test;
-    char* arr3[] = { "Program_name", "cube", "2" };
-    char** data3 = arr3;
+    const char* arr3[] = { "Program_name", "cube", "2" };
+    const char** data3 = arr3;
 // Act
 // Assert
     EXPECT_EQ(test(3, data3),"Area of Figure cube 24");

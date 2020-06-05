@@ -6,7 +6,7 @@
 #include <vector>
 #include <sstream>
 
-std::string area_calculator_app::operator()(int argc, char** argv) {
+std::string area_calculator_app::operator()(int argc, const char** argv) {
    std::vector<std::string> s_vec;
     for (int i = 1; i < argc; i++) {
         s_vec.push_back(argv[i]);

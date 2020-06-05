@@ -8,7 +8,7 @@
 
 class area_calculator_app {
  public:
-    std::string operator()(int argc, char** argv);
+    std::string operator()(int argc, const char** argv);
     bool CanCreateFigure(int argc, std::vector<std::string> argv);
     figure* CreateFigure(std::vector<std::string> argv);
 };
