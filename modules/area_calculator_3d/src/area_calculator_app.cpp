@@ -49,8 +49,7 @@ figure* area_calculator_app::CreateFigure(std::vector<std::string> argv) {
         _figure = tmpCube->createFigure();
         vec.push_back(atof(argv[1].c_str()));
         _figure->SetValue(vec);
-    }
-    else {
+    } else {
         if (argv[0] == "cylinder") {
             CylinderFactory* tmpCylinder = new CylinderFactory;
             _figure = tmpCylinder->createFigure();
