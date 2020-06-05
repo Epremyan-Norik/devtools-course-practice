@@ -7,7 +7,7 @@
 #include <sstream>
 
 std::string area_calculator_app::operator()(int argc, const char** argv) {
-   std::vector<std::string> s_vec;
+    std::vector<std::string> s_vec;
     for (int i = 1; i < argc; i++) {
         s_vec.push_back(argv[i]);
     }
@@ -21,20 +21,17 @@ std::string area_calculator_app::operator()(int argc, const char** argv) {
     strs << area;
     return strs.str();
 }
-bool area_calculator_app::CanCreateFigure(const int argc, std::vector<std::string> argv) {
-    if (argc < 3) return false; // Not enough arguments
+bool area_calculator_app::CanCreateFigure(int argc, std::vector<std::string> argv) {
+    if (argc < 3) return false;  // Not enough arguments
     if (argv[0] == "cube") {
         return true;
-    }
-    else if (argv[0] == "cylinder") {
-        if (argc < 4) return false; // Not enough arguments
+    } else if (argv[0] == "cylinder") {
+        if (argc < 4) return false;  // Not enough arguments
         return true;
-    }
-    else if (argv[0] == "cone") {
-        if (argc < 4) return false; // Not enough arguments
+    } else if (argv[0] == "cone") {
+        if (argc < 4) return false;  // Not enough arguments
         return true;
-    }
-    else return false; // lib don't know this figure
+    } else return false;  // lib don't know this figure
 }
 figure* area_calculator_app::CreateFigure(std::vector<std::string> argv) {
     figure* _figure=nullptr;
