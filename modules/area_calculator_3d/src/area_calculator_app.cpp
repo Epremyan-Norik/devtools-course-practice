@@ -45,19 +45,19 @@ figure* area_calculator_app::CreateFigure(std::vector<std::string> argv) {
 	}
 	else {
 		if (argv[0] == "cylinder") {
-			CylinderFactory* tmpCylinder = new CylinderFactory;
-			_figure = tmpCylinder->createFigure();
-			vec.push_back(atof(argv[1].c_str()));
-			vec.push_back(atof(argv[2].c_str()));
-			_figure->SetValue(vec);
+            CylinderFactory* tmpCylinder = new CylinderFactory;
+            _figure = tmpCylinder->createFigure();
+            vec.push_back(atof(argv[1].c_str()));
+            vec.push_back(atof(argv[2].c_str()));
+            _figure->SetValue(vec);
 		}
 		else {
 			if (argv[0] == "cone") {
-				ConeFactory* tmpCone = new ConeFactory;
-				_figure = tmpCone->createFigure();
-				vec.push_back(atof(argv[1].c_str()));
-				vec.push_back(atof(argv[2].c_str()));
-				_figure->SetValue(vec);
+                ConeFactory* tmpCone = new ConeFactory;
+                _figure = tmpCone->createFigure();
+                vec.push_back(atof(argv[1].c_str()));
+                vec.push_back(atof(argv[2].c_str()));
+                _figure->SetValue(vec);
             }
         }
     }
