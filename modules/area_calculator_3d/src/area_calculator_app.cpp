@@ -11,9 +11,9 @@ std::string area_calculator_app::operator()(int argc, const char** argv) {
     for (int i = 1; i < argc; i++) {
         s_vec.push_back(argv[i]);
     }
-	if (!(CanCreateFigure(argc, s_vec))) {
-		std::cout << "Cant create figure. Invalid arguments.";
-		throw "Invalid Arguments";
+    if (!(CanCreateFigure(argc, s_vec))) {
+        std::cout << "Cant create figure. Invalid arguments.";
+        throw "Invalid Arguments";
     }
     figure* _figure = CreateFigure(s_vec);
     double area = _figure->area();
