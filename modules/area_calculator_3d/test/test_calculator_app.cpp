@@ -81,7 +81,7 @@ TEST(Epremyan_Norik_Application, CantCreateInOperator) {
     const char** data4 = arr4;
 // Act
 // Assert
-    ASSERT_ANY_THROW(test(4, data4));
+    EXPECT_EQ(test(4, data4), "Cant create figure. Invalid arguments.");
 }
 
 TEST(Epremyan_Norik_Application, CantCreatePointerUnknownFigure) {
@@ -126,7 +126,7 @@ TEST(Epremyan_Norik_Application, CantCalculateArea) {
     const char** data3 = arr3;
 // Act
 // Assert
-    ASSERT_ANY_THROW(test(3, data3));
+    EXPECT_EQ(test(3, data3), "Cant create figure. Invalid arguments.");
 }
 
 TEST(Epremyan_Norik_Application, CanCalculateArea) {
