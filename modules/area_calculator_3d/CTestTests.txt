@@ -60,11 +60,3 @@ add_test(
 set_tests_properties (${prefix}_cant_create_with_few_parameters PROPERTIES
     PASS_REGULAR_EXPRESSION "Cant create figure. Invalid arguments."
     LABELS "${MODULE}")
-
-add_test(
-    NAME ${prefix}_cant_create_figure_with_negative_parameter
-    COMMAND ${APPLICATION} cube -2
-)
-set_tests_properties (${prefix}_cant_create_figure_with_negative_parameter PROPERTIES
-    PASS_REGULAR_EXPRESSION "Cant create figure. Invalid arguments."
-    LABELS "${MODULE}")
